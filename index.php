@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +16,16 @@
   <h1 class="text-center mt-5">Strong Password Generator</h1>
   <h2 class="text-center pt-3 pb-5">Genera una password sicura</h2>
   <div class="container">
+  <?php  include "./script.php";  ?>
     <form action="" method="get">
      <div class="row g-3 align-items-center justify-content-evenly ">
      <div class="col-auto">
         <label for="inputPassword6" class="col-form-label">Lunghezza Password:</label>
       </div>
      <div class="col-auto">
-       <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+       <input type="number" name="password_lenght" id="password_lenght" class="form-control" aria-describedby="passwordHelpInline">
      </div>
-     <div class="d-flex g-3 align-items-center justify-content-evenly  ">
+    <!--  <div class="d-flex g-3 align-items-center justify-content-evenly  ">
         <p>
         Consenti ripetizioni di uno o più caratteri
         </p>
@@ -58,6 +64,7 @@
          </label>
        </div>
      </div>
+     -->
      <div class="d-flex g-3">
        <button type="submit" class="btn btn-primary">Invia</button>
        <button type="reset" class="btn  btn-secondary">Anulla</button>
